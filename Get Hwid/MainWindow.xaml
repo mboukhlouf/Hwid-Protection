@@ -1,0 +1,15 @@
+﻿<Window x:Class="Get_Hwid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Get_Hwid"
+        mc:Ignorable="d"
+        Title="Get Hwid" Height="215" Width="435">
+    <Border Padding="50">
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock Margin="0 0 0 5" Text="Your HWID:" HorizontalAlignment="Center"/>
+            <TextBox Text="{Binding Hwid}" Width="270"/>
+        </StackPanel>
+    </Border>
+</Window>
