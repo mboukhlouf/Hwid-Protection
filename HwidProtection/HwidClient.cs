@@ -11,9 +11,10 @@ namespace HwidProtection
 
         public HwidClient(string host)
         {
+            host = host.TrimEnd('/');
             Host = host;
         }
-
+        
         public async Task<bool> VerifyAsync()
         {
             using var client = new HttpClient();
@@ -23,7 +24,7 @@ namespace HwidProtection
             {
                 new KeyValuePair<string, string>("hwid", hwid)
             });
-            var response = await client.PostAsync(Host, content);
+            var response = await client.PostAsync(Host + "/Hwid/Verify", content);
             if (response.IsSuccessStatusCode)
                 return true;
 

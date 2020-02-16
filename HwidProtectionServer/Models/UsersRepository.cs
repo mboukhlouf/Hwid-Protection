@@ -13,7 +13,7 @@ namespace HwidProtectionServer.Models
         {
             Users = new List<User>
             {
-                new User {Id = 0, Username = "neos07", Password = "helloworld"}
+                new User {Id = 0, Username = "mrpromo", Password = "29S3XkEvCF8Lt9Mq"}
             };
         }
     }

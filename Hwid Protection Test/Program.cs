@@ -19,7 +19,7 @@ namespace Hwid_Protection_Test
 
         private static void EnsureHwidValid()
         {
-            HwidClient client = new HwidClient("https://localhost:44306/");
+            HwidClient client = new HwidClient("http://51.178.238.245:8080/");
             bool isValid = client.VerifyAsync().Result;
             if (!isValid)
             {
